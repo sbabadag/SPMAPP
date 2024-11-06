@@ -28,10 +28,29 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 5,
     overflow: 'hidden',
+    marginBottom: 16, // Add margin to ensure it is visible
+    padding: 10,
+    backgroundColor: '#fff',
   },
-  picker: {
-    height: 50,
-    width: '100%',
+  pickerText: {
+    fontSize: 16,
+  },
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 10,
+    width: '80%',
+    maxHeight: '80%',
+  },
+  modalItem: {
+    padding: 10,
+    fontSize: 18,
   },
   table: {
     marginTop: 20,
@@ -54,6 +73,17 @@ const styles = StyleSheet.create({
   },
   tableCell: {
     flex: 1,
+    padding: 5,
+  },
+  tableCellInput: {
+    flex: 1,
+    padding: 5,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 5,
+  },
+  highlightedCell: {
+    backgroundColor: 'yellow',
   },
 });
 
